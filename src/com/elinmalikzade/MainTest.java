@@ -25,14 +25,14 @@ public class MainTest {
         robots.add(new Robot(robotsInitialCoords.peek()[0], robotsInitialCoords.peek()[1], 'W'));
         robotsInitialCoords.pop();
 
-        LinkedList<String> commandsForRobots = new LinkedList<>();
-        commandsForRobots.add("RFRFRFRF");
-        commandsForRobots.add("FRRFLLFFRRFLL");
-        commandsForRobots.add("LLFFFLFLFL");
+        LinkedList<String> instructionsForRobots = new LinkedList<>();
+        instructionsForRobots.add("RFRFRFRF");
+        instructionsForRobots.add("FRRFLLFFRRFLL");
+        instructionsForRobots.add("LLFFFLFLFL");
 
         Mars mars = new Mars(grid, robots);
 
-        LinkedList<String> results = mars.moveRobots(commandsForRobots);
+        LinkedList<String> results = mars.moveRobots(instructionsForRobots);
 
         Assert.assertTrue(results.pop().equals("1 1 E") && results.pop().equals("3 3 N LOST") && results.pop().equals("2 3 S"));
     }
@@ -54,11 +54,11 @@ public class MainTest {
         robots.add(new Robot(robotsInitialCoords.peek()[0], robotsInitialCoords.peek()[1], 'W'));
         robotsInitialCoords.pop();
 
-        LinkedList<String> commandsForRobots = new LinkedList<>();
+        LinkedList<String> instructionsForRobots = new LinkedList<>();
 
         Mars mars = new Mars(grid, robots);
 
-        LinkedList<String> results = mars.moveRobots(commandsForRobots);
+        LinkedList<String> results = mars.moveRobots(instructionsForRobots);
 
         Assert.assertTrue(results.pop().equals("1 1 E") && results.pop().equals("3 2 N") && results.pop().equals("0 3 W"));
     }
@@ -69,20 +69,20 @@ public class MainTest {
 
         LinkedList<Robot> robots = new LinkedList<>();
 
-        LinkedList<String> commandsForRobots = new LinkedList<>();
-        commandsForRobots.add("RFRFRFRF");
-        commandsForRobots.add("FRRFLLFFRRFLL");
-        commandsForRobots.add("LLFFFLFLFL");
+        LinkedList<String> instructionsForRobots = new LinkedList<>();
+        instructionsForRobots.add("RFRFRFRF");
+        instructionsForRobots.add("FRRFLLFFRRFLL");
+        instructionsForRobots.add("LLFFFLFLFL");
 
         Mars mars = new Mars(grid, robots);
 
-        LinkedList<String> results = mars.moveRobots(commandsForRobots);
+        LinkedList<String> results = mars.moveRobots(instructionsForRobots);
 
         Assert.assertTrue(results.isEmpty());
     }
 
     @org.junit.Test
-    public void robotOutOfGridTest() {
+    public void robotOutOfGrid() {
         Grid grid = new Grid(5, 3);
 
         LinkedList<int[]> robotsInitialCoords = new LinkedList<>();
@@ -92,18 +92,18 @@ public class MainTest {
         robots.add(new Robot(robotsInitialCoords.peek()[0], robotsInitialCoords.peek()[1], 'E'));
         robotsInitialCoords.pop();
 
-        LinkedList<String> commandsForRobots = new LinkedList<>();
-        commandsForRobots.add("RFRFRFRF");
+        LinkedList<String> instructionsForRobots = new LinkedList<>();
+        instructionsForRobots.add("RFRFRFRF");
 
         Mars mars = new Mars(grid, robots);
 
-        LinkedList<String> results = mars.moveRobots(commandsForRobots);
+        LinkedList<String> results = mars.moveRobots(instructionsForRobots);
 
         Assert.assertTrue(results.pop().equals("10 20 E"));
     }
 
     @org.junit.Test
-    public void cornerCellBlockBothSides() {
+    public void cornerCellBlockedBothSides() {
         Grid grid = new Grid(5, 3);
 
         LinkedList<int[]> robotsInitialCoords = new LinkedList<>();
@@ -120,16 +120,38 @@ public class MainTest {
         robots.add(new Robot(robotsInitialCoords.peek()[0], robotsInitialCoords.peek()[1], 'S'));
         robotsInitialCoords.pop();
 
-        LinkedList<String> commandsForRobots = new LinkedList<>();
-        commandsForRobots.add("RF");
-        commandsForRobots.add("RFRF");
-        commandsForRobots.add("RFRFRF");
+        LinkedList<String> instructionsForRobots = new LinkedList<>();
+        instructionsForRobots.add("RF");
+        instructionsForRobots.add("RFRF");
+        instructionsForRobots.add("RFRFRF");
 
         Mars mars = new Mars(grid, robots);
 
-        LinkedList<String> results = mars.moveRobots(commandsForRobots);
+        LinkedList<String> results = mars.moveRobots(instructionsForRobots);
 
         Assert.assertTrue(results.pop().equals("0 3 W LOST") && results.pop().equals("0 3 N LOST") && results.pop().equals("1 3 E"));
+    }
+
+    @org.junit.Test
+    public void unknownCommand() {
+        Grid grid = new Grid(5, 3);
+
+        LinkedList<int[]> robotsInitialCoords = new LinkedList<>();
+        robotsInitialCoords.add(grid.convertMartianCoordsToInternal(0, 3));
+
+
+        LinkedList<Robot> robots = new LinkedList<>();
+        robots.add(new Robot(robotsInitialCoords.peek()[0], robotsInitialCoords.peek()[1], 'S'));
+        robotsInitialCoords.pop();
+
+        LinkedList<String> instructionsForRobots = new LinkedList<>();
+        instructionsForRobots.add("FFBLFF");
+
+        Mars mars = new Mars(grid, robots);
+
+        LinkedList<String> results = mars.moveRobots(instructionsForRobots);
+
+        Assert.assertTrue(results.pop().equals("2 1 E"));
     }
 
 }

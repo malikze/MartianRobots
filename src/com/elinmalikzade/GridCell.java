@@ -5,32 +5,32 @@ import java.util.Map;
 
 public class GridCell {
 
-    private ArrayList<CommandToIgnore> commandsToIgnore;
+    private ArrayList<InstructionToIgnore> instructionsToIgnore;
 
     public GridCell() {
-        commandsToIgnore = new ArrayList<>();
+        instructionsToIgnore = new ArrayList<>();
     }
 
 
-    //Check if a robot on this cell with the given direction should ignored the given command
-    public boolean shouldIgnoreThisCommand(char direction, char command) {
-        if (commandsToIgnore.stream().anyMatch(commandToIgnore ->
-                        commandToIgnore.getKey() == direction && commandToIgnore.getValue() == command))
+    //Check if a robot on this cell with the given orientation should ignored the given instruction
+    public boolean shouldIgnoreThisCommand(char direction, char instruction) {
+        if (instructionsToIgnore.stream().anyMatch(instructionToIgnore ->
+                        instructionToIgnore.getKey() == direction && instructionToIgnore.getValue() == instruction))
             return true;
         return false;
     }
 
-    //Add the command so robots on this cell with the given direction ignore it later
-    public void addCommandToIgnoreNextTime(char direction, char command) {
-        CommandToIgnore commandToIgnore = new CommandToIgnore(direction, command);
-        this.commandsToIgnore.add(commandToIgnore);
+    //Add the instruction so robots on this cell with the given orientation ignore it later
+    public void addInstructionToIgnoreNextTime(char orientation, char instruction) {
+        InstructionToIgnore instructionToIgnore = new InstructionToIgnore(orientation, instruction);
+        this.instructionsToIgnore.add(instructionToIgnore);
     }
 
-    private final class CommandToIgnore implements Map.Entry<Character, Character> {
+    private final class InstructionToIgnore implements Map.Entry<Character, Character> {
         private final Character key;
         private Character value;
 
-        public CommandToIgnore(Character key, Character value) {
+        public InstructionToIgnore(Character key, Character value) {
             this.key = key;
             this.value = value;
         }

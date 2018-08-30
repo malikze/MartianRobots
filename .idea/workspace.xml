@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b201cb7d-c593-4f96-976e-4a184766ffe4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MartianRobots/com/elinmalikzade/GridCell$CommandToIgnore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/elinmalikzade/GridCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elinmalikzade/GridCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/elinmalikzade/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elinmalikzade/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/elinmalikzade/Mars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elinmalikzade/Mars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/elinmalikzade/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elinmalikzade/Robot.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,15 +31,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="java" value="8016" />
-          <entry key="md" value="195" />
+          <entry key="java" value="8402" />
+          <entry key="md" value="557" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8016" />
-          <entry key="Markdown" value="195" />
+          <entry key="JAVA" value="8402" />
+          <entry key="Markdown" value="557" />
           <entry key="PLAIN_TEXT" value="12" />
         </counts>
       </usages-collector>
@@ -43,7 +47,7 @@
         <counts>
           <entry key="class" value="4" />
           <entry key="java" value="9" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -51,7 +55,7 @@
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="JAVA" value="9" />
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -65,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/elinmalikzade/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="134" column="1" selection-start-line="134" selection-start-column="1" selection-end-line="134" selection-end-column="1" />
+            <state relative-caret-position="2265">
+              <caret line="151" column="74" selection-start-line="151" selection-start-column="74" selection-end-line="151" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,31 +91,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/input.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="30">
-                <caret line="2" column="87" lean-forward="true" selection-start-line="2" selection-start-column="87" selection-end-line="2" selection-end-column="87" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/elinmalikzade/Mars.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="112" selection-start-line="42" selection-start-column="112" selection-end-line="42" selection-end-column="112" />
+            <state relative-caret-position="332">
+              <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -128,12 +111,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/elinmalikzade/Robot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="75" column="42" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
-              <folding>
-                <element signature="method#turnRight#0;class#Robot#0" />
-                <element signature="method#turnLeft#0;class#Robot#0" />
-              </folding>
+            <state relative-caret-position="319">
+              <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="105">
+                <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -141,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/elinmalikzade/GridCell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="315">
+              <caret line="23" column="46" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -167,12 +158,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/elinmalikzade/Coord.java" />
-        <option value="$PROJECT_DIR$/src/com/elinmalikzade/Robot.java" />
         <option value="$PROJECT_DIR$/input.txt" />
-        <option value="$PROJECT_DIR$/src/com/elinmalikzade/GridCell.java" />
         <option value="$PROJECT_DIR$/src/com/elinmalikzade/Grid.java" />
-        <option value="$PROJECT_DIR$/src/com/elinmalikzade/Mars.java" />
         <option value="$PROJECT_DIR$/src/com/elinmalikzade/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/elinmalikzade/GridCell.java" />
+        <option value="$PROJECT_DIR$/src/com/elinmalikzade/Robot.java" />
+        <option value="$PROJECT_DIR$/src/com/elinmalikzade/Mars.java" />
         <option value="$PROJECT_DIR$/src/com/elinmalikzade/MainTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
@@ -229,7 +220,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535653026876" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535654754563" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -254,7 +245,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.elinmalikzade.Main" />
       <module name="MartianRobots" />
@@ -311,17 +302,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainTest.unknownCommand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MartianRobots" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.elinmalikzade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.elinmalikzade" />
+      <option name="MAIN_CLASS_NAME" value="com.elinmalikzade.MainTest" />
+      <option name="METHOD_NAME" value="unknownCommand" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.MainTest.test1" />
       <item itemvalue="JUnit.MainTest" />
       <item itemvalue="JUnit.MainTest.cornerCellBlockBothSides" />
+      <item itemvalue="JUnit.MainTest.unknownCommand" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainTest" />
-        <item itemvalue="JUnit.MainTest.cornerCellBlockBothSides" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="JUnit.MainTest.unknownCommand" />
+        <item itemvalue="JUnit.MainTest.cornerCellBlockBothSides" />
         <item itemvalue="JUnit.MainTest.test1" />
       </list>
     </recent_temporary>
@@ -339,20 +348,11 @@
       <workItem from="1535561275886" duration="7198000" />
       <workItem from="1535619642079" duration="5888000" />
       <workItem from="1535628325463" duration="9075000" />
-      <workItem from="1535653202520" duration="232000" />
+      <workItem from="1535653202520" duration="1716000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest - 2018.08.30 at 15h 00m 12s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest - 2018.08.30 at 15h 07m 17s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest - 2018.08.30 at 15h 07m 33s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest - 2018.08.30 at 15h 08m 15s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
@@ -374,15 +374,24 @@
     <history-entry file="MainTest - 2018.08.30 at 19h 01m 45s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MainTest_unknownCommand - 2018.08.30 at 19h 29m 17s.xml">
+      <configuration name="MainTest.unknownCommand" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2018.08.30 at 19h 44m 24s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest - 2018.08.30 at 19h 45m 47s.xml">
+      <configuration name="MainTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22393000" />
+    <option name="totallyTimeSpent" value="23877000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-257" width="1920" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2550586" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2550586" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -391,14 +400,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32953367" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32953367" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32953367" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -483,6 +492,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3656">
           <caret line="788" column="16" selection-start-line="788" selection-start-column="16" selection-end-line="788" selection-end-column="16" />
+          <folding>
+            <element signature="e#23033#23034#0" expanded="true" />
+            <element signature="e#23060#23061#0" expanded="true" />
+            <element signature="e#23518#23519#0" expanded="true" />
+            <element signature="e#23554#23555#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -500,20 +515,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elinmalikzade/MainTest.java">
+    <entry file="file://$PROJECT_DIR$/input.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="134" column="1" selection-start-line="134" selection-start-column="1" selection-end-line="134" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elinmalikzade/Mars.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="112" selection-start-line="42" selection-start-column="112" selection-end-line="42" selection-end-column="112" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -524,21 +529,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elinmalikzade/Robot.java">
+    <entry file="file://$PROJECT_DIR$/src/com/elinmalikzade/GridCell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="75" column="42" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
+        <state relative-caret-position="315">
+          <caret line="23" column="46" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="46" />
           <folding>
-            <element signature="method#turnRight#0;class#Robot#0" />
-            <element signature="method#turnLeft#0;class#Robot#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elinmalikzade/GridCell.java">
+    <entry file="file://$PROJECT_DIR$/src/com/elinmalikzade/Mars.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="332">
+          <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elinmalikzade/Robot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elinmalikzade/MainTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2265">
+          <caret line="151" column="74" selection-start-line="151" selection-start-column="74" selection-end-line="151" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -555,18 +573,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="87" lean-forward="true" selection-start-line="2" selection-start-column="87" selection-end-line="2" selection-end-column="87" />
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
           </first_editor>
           <second_editor />
         </state>

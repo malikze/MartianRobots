@@ -6,16 +6,16 @@ public class Robot {
 
     private int x;
     private int y;
-    private char direction;
+    private char orientation;
     private boolean lost;
-    private Stack<Character> previosCommands;
+    private Stack<Character> previosInstructions;
 
-    public Robot(int initialX, int initialY, char initialDirection) {
+    public Robot(int initialX, int initialY, char initialOrientation) {
         this.x = initialX;
         this.y = initialY;
-        this.direction = initialDirection;
+        this.orientation = initialOrientation;
         this.lost = false;
-        this.previosCommands = new Stack<>();
+        this.previosInstructions = new Stack<>();
     }
 
     public int[] getCurrentCoords() {
@@ -23,13 +23,8 @@ public class Robot {
         return currentCoords;
     }
 
-    public void setCurrentCoords(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    public char getCurrentDirection() {
-        return direction;
+    public char getCurrentOrientation() {
+        return orientation;
     }
 
     public boolean isLost() {
@@ -40,84 +35,84 @@ public class Robot {
         this.lost = true;
     }
 
-    public void act(char command) {
-        switch (command) {
+    public void act(char instruction) {
+        switch (instruction) {
             case 'R':
                 turnRight();
-                previosCommands.push(command);
+                previosInstructions.push(instruction);
                 break;
             case 'L':
                 turnLeft();
-                previosCommands.push(command);
+                previosInstructions.push(instruction);
                 break;
             case 'F':
                 moveForward();
-                previosCommands.push(command);
+                previosInstructions.push(instruction);
                 break;
              default:
-                 // if command is not recognized, ignore for now
+                 // if the instruction is not recognized, ignore for now
                  break;
         }
     }
 
-    public void revertLastCommand() {
-        if (previosCommands.size() > 0) {
-            switch (previosCommands.get(previosCommands.size() - 1)) {
+    public void revertLastInstruction() {
+        if (previosInstructions.size() > 0) {
+            switch (previosInstructions.get(previosInstructions.size() - 1)) {
                 case 'R':
                     turnLeft();
-                    previosCommands.pop();
+                    previosInstructions.pop();
                     break;
                 case 'L':
                     turnRight();
-                    previosCommands.pop();
+                    previosInstructions.pop();
                     break;
                 case 'F':
                     moveBackward();
-                    previosCommands.pop();
+                    previosInstructions.pop();
                     break;
                 default:
-                    // if command is not recognized, ignore for now
+                    // if the instruction is not recognized, ignore for now
                     break;
             }
         }
     }
 
     private void turnRight() {
-        switch (this.direction) {
+        switch (this.orientation) {
             case 'N':
-                this.direction = 'E';
+                this.orientation = 'E';
                 break;
             case 'S':
-                this.direction = 'W';
+                this.orientation = 'W';
                 break;
             case 'E':
-                this.direction = 'S';
+                this.orientation = 'S';
                 break;
             case 'W':
-                this.direction = 'N';
+                this.orientation = 'N';
                 break;
         }
     }
 
     private void turnLeft() {
-        switch (direction) {
+        switch (orientation) {
             case 'N':
-                this.direction = 'W';
+                this.orientation = 'W';
                 break;
             case 'S':
-                this.direction = 'E';
+                this.orientation = 'E';
                 break;
             case 'E':
-                this.direction = 'N';
+                this.orientation = 'N';
                 break;
             case 'W':
-                this.direction = 'S';
+                this.orientation = 'S';
                 break;
         }
     }
 
     private void moveForward() {
-        switch (direction) {
+        switch (orientation) {
             case 'N':
                 this.x = x - 1;
                 break;
@@ -134,7 +129,7 @@ public class Robot {
     }
 
     private void moveBackward() {
-        switch (direction) {
+        switch (orientation) {
             case 'N':
                 this.x = x + 1;
                 break;
