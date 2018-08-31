@@ -57,7 +57,7 @@ public class Robot {
 
     public void revertLastInstruction() {
         if (previosInstructions.size() > 0) {
-            switch (previosInstructions.get(previosInstructions.size() - 1)) {
+            switch (previosInstructions.peek()) {
                 case 'R':
                     turnLeft();
                     previosInstructions.pop();

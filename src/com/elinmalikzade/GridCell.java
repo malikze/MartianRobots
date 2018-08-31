@@ -13,9 +13,9 @@ public class GridCell {
 
 
     //Check if a robot on this cell with the given orientation should ignored the given instruction
-    public boolean shouldIgnoreThisCommand(char direction, char instruction) {
+    public boolean shouldIgnoreThisInstruction(char orientation, char instruction) {
         if (instructionsToIgnore.stream().anyMatch(instructionToIgnore ->
-                        instructionToIgnore.getKey() == direction && instructionToIgnore.getValue() == instruction))
+                        instructionToIgnore.getKey() == orientation && instructionToIgnore.getValue() == instruction))
             return true;
         return false;
     }

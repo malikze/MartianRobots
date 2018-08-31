@@ -12,7 +12,7 @@ public class Mars {
         this.robots = robots;
     }
 
-    // Move each robot on Mars with the corresponding instructions in the commands list
+    // Move each robot on Mars with the corresponding instructions in the instructions list
     public LinkedList<String> moveRobots(LinkedList<String> instructionsForRobots) {
         LinkedList<String> results = new LinkedList<>();
         robots.forEach(robot -> {
@@ -22,8 +22,8 @@ public class Mars {
                 results.add(moveRobot(robot, ""));
             } else {
                 if (!instructionsForRobots.isEmpty()) {
-                    String commands = instructionsForRobots.pop();
-                    results.add(moveRobot(robot, commands));
+                    String instructions = instructionsForRobots.pop();
+                    results.add(moveRobot(robot, instructions));
                 } else {
                     results.add(moveRobot(robot, ""));
                 }
@@ -35,7 +35,7 @@ public class Mars {
     // Move a robot with instructions
     private String moveRobot(Robot robot, String instructions) {
         for (char c : instructions.toCharArray()) {
-            if (!this.grid.getCells()[robot.getCurrentCoords()[0]][robot.getCurrentCoords()[1]].shouldIgnoreThisCommand(robot.getCurrentOrientation(), c)) {
+            if (!this.grid.getCells()[robot.getCurrentCoords()[0]][robot.getCurrentCoords()[1]].shouldIgnoreThisInstruction(robot.getCurrentOrientation(), c)) {
                 robot.act(c);
                 if (robot.getCurrentCoords()[0] < 0 || robot.getCurrentCoords()[0] > this.grid.getCells().length ||
                         robot.getCurrentCoords()[1] < 0 || robot.getCurrentCoords()[1] > this.grid.getCells()[0].length) {

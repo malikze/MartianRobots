@@ -38,7 +38,7 @@ public class MainTest {
     }
 
     @org.junit.Test
-    public void robotsWithoutCommands() {
+    public void robotsWithoutInstructions() {
         Grid grid = new Grid(5, 3);
 
         LinkedList<int[]> robotsInitialCoords = new LinkedList<>();
@@ -64,7 +64,7 @@ public class MainTest {
     }
 
     @org.junit.Test
-    public void commandsWithoutRobots() {
+    public void instructionsWithoutRobots() {
         Grid grid = new Grid(5, 3);
 
         LinkedList<Robot> robots = new LinkedList<>();
@@ -133,7 +133,7 @@ public class MainTest {
     }
 
     @org.junit.Test
-    public void unknownCommand() {
+    public void unknownInstruction() {
         Grid grid = new Grid(5, 3);
 
         LinkedList<int[]> robotsInitialCoords = new LinkedList<>();

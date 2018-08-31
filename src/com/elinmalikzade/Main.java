@@ -12,14 +12,14 @@ public class Main {
 
         Grid grid = null;
         LinkedList<Robot> robots = new LinkedList<>();
-        LinkedList<String> commandsForRobots = new LinkedList<>();
+        LinkedList<String> instructionsForRobots = new LinkedList<>();
         String fileName = "input.txt";
         int idx = 0;
 
 
         //Read input from input.txt file
         try(BufferedReader br = new BufferedReader(new FileReader(fileName))) {
-            //Read each line of input.txt file and create the grid, robots and commands
+            //Read each line of input.txt file and create the grid, robots and instructions
             for(String textLine; (textLine = br.readLine()) != null;) {
                 if (idx == 0) {
                     String[] chars = textLine.split(" ");
@@ -39,7 +39,7 @@ public class Main {
                     robots.add(robot);
                     idx++;
                 } else if(idx == 2) {
-                    commandsForRobots.add(textLine);
+                    instructionsForRobots.add(textLine);
                     idx++;
                 } else {
                     if (!textLine.equals(""))
@@ -49,7 +49,7 @@ public class Main {
             }
 
             Mars mars = new Mars(grid, robots);
-            LinkedList<String> results = mars.moveRobots(commandsForRobots);
+            LinkedList<String> results = mars.moveRobots(instructionsForRobots);
 
             //Print results
             results.forEach(str -> System.out.println(str));
